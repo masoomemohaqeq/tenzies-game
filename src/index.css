@@ -39,8 +39,8 @@ body{
 
 .main{
   background-color: #F5F5F5;
-  width:30vw;
-  height:30vw;
+  width:30em;
+  height:30em;
   border-radius: 10px;
   margin: auto;
   display: flex;
@@ -158,4 +158,18 @@ body{
   font-weight: 600;
   letter-spacing: 1px;
   cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+  .main{
+    width: 95vw;
+    height: auto;
+    border-radius: 0;
+    padding: 20px 10px;
+    gap: 10px;
+  }
+
+  .dice-container{
+    grid-template: repeat(5,1fr)/repeat(2,1fr);
+  }
 }
